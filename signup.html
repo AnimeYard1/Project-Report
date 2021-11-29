@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animeyard- SingUp</title>
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+        <!-- OWL CAROUSEL -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+        <!-- BOX ICONS -->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <!-- APP CSS -->
+        <link rel="stylesheet" href="grid.css">
+        <link rel="stylesheet" href="app.css">
+        <link rel="stylesheet" href="signup.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="Auth.js"></script>
+
+        <script>
+            $(document).ready(function(){
+            $(".bttn").click(function(){
+                $(".textbox input").val('');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container1">
+
+        <!-- NAV -->
+        <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="#section" class="logo">
+                    <i class='bx bx-movie-play bx-tada main-color'></i>An<span class="main-color">i</span>me<span class="main-color">Y</span>ard
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="genre.html">Genre</a></li>
+                    <li><a href="index.html#section">About Us</a></li>
+                    <li>
+                        <a href="#" class="btn btn-hover">
+                            <span>Sign in</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- MOBILE MENU TOGGLE -->
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END NAV -->
+    <div class="login-container" id="boxy">
+        <h1 id="cred">Sign Up</h1>
+        <div class="textbox">
+            <i class="fal fa-user"></i>
+            <input type="email" placeholder="E-Mail" id="email">
+        </div>
+        <div class="textbox">
+            <i class="fal fa-user"></i>
+            <input type="text" placeholder="Username">
+        </div>
+
+        <div class="textbox" id="pswrd">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" id="password">
+        </div>
+        <div class="textbox" id="pswrd">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Confirm Password">
+        </div>
+
+        <input class="bttn" type="button" onclick="signUp()" value="Sign Up">
+        <p id="p1">Already have an Account?</p><span id="sinup"><a href="login.html">Log In</a></span>
+        </div>
+    </div>
+
+        <!-- SCRIPT -->
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <!-- APP SCRIPT -->
+    <script src="app.js"></script>
+
+</body>
+</html>

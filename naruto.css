@@ -1,0 +1,126 @@
+h1{
+    padding-left: 20px;
+    text-transform: uppercase;
+    /* font-size: 1.5rem; */
+    font-weight: 700;
+    border-left: 4px solid var(--main-color);
+    display: flex;
+    align-items: center;
+}
+
+.line_bar{
+    background-color: black;
+    padding: 0.5%;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+}
+
+.line_bar i{
+    float: right;
+    padding: 2px 5px;
+}
+
+.player-container{
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 80%;
+    height: auto;
+}
+.embed-youtube {
+    position: relative;
+    padding-bottom: 56.25%; 
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.embed-youtube iframe,
+.embed-youtube object,
+.embed-youtube embed {
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+video{
+    max-width: 1240px;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.episodes h3{
+    background-color: black;
+    position: relative;
+    top: -10px;
+    
+
+}
+/* .episodes{
+    background-color: black;
+} */
+.episodes ul{
+    list-style: none;
+    margin-left: 20px;
+    width: 100%;
+    height: 150px;
+    overflow-y: scroll;
+    
+}
+.button{
+    
+    background-color:black; 
+    color:#c0392b;
+    position: relative;
+    width: 50px;
+    height: 25px;
+    margin: 3px;
+    margin:13px 2px;
+    overflow: hidden;
+    border: 1px solid #000;
+    font-weight: 20px;
+    padding: 20px;
+    text-align: center;
+    justify-content: center ;
+    cursor: pointer;
+     
+    
+
+}
+
+#episodeno{
+    display: inline;
+    padding-right: 3px;
+    border-right:2px solid grey ; 
+}
+.line_bar span{
+    padding-left: 5px;
+}
+
+.button:hover{
+    background-color: #c0392b;
+    color: black;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    border-radius: 8px;
+}
+
+
+.episodes ul::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+
+/* width */
+
+/* .vid_player{
+    margin: 2% auto;
+} */

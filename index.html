@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="165230331702-p4ks16dop4quiu5tjflrh5elfcfq0nte.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <title>Animeyard- SingUp</title>
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+        <!-- OWL CAROUSEL -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+        <!-- BOX ICONS -->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <!-- APP CSS -->
+        <link rel="stylesheet" href="grid.css">
+        <link rel="stylesheet" href="app.css">
+        <link rel="stylesheet" href="signup.css">
+        <script>
+            $(document).ready(function(){
+            $(".bttn").click(function(){
+    // $("#p1").text("ALready Have an Account?");
+    // $("#sinup").text("Log In");
+    // $(".bttn").attr("value","Log In");
+    // $("#cred").text("Sign-Up");
+    // var email="<input type='email' placeholder='E-Mail'>";
+    // var emdiv="<div class='textbox'></div>"
+    // $(emdiv).append(email);
+    // $("#cred").after(emdiv);
+                $(".textbox input").val('');
+
+
+    });
+  });
+        </script>
+        
+</head>
+<body>
+    <script>
+        function onSignIn(googleUser) {
+          // Useful data for your client-side scripts:
+          var profile = googleUser.getBasicProfile();
+          console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+          console.log('Full Name: ' + profile.getName());
+          console.log('Given Name: ' + profile.getGivenName());
+          console.log('Family Name: ' + profile.getFamilyName());
+          console.log("Image URL: " + profile.getImageUrl());
+          console.log("Email: " + profile.getEmail());
+  
+          // The ID token you need to pass to your backend:
+          var id_token = googleUser.getAuthResponse().id_token;
+          console.log("ID Token: " + id_token);
+        }
+      </script>
+
+    <div class="container1">
+
+        
+        
+    <div class="start">
+        <span id="model"><i class='bx bx-movie-play bx-tada main-color'></i>An<span class="main-color">i</span>me<span class="main-color">Y</span>ard</span>
+        <div class="head1">
+            <h1>WELCOME TO THE ANIME WORLD</h1>
+        </div>
+        
+        <div class="bt-64">
+            <a href="signin.html">
+            <button class="button-64" onclick="onSignIn">
+                <span class="text">Lets Get Started</span>
+            </button>
+        </a>
+        </div>
+        <!-- <a href=""></a> -->
+        
+    </div>
+    
+    
+    <!-- Login
+    <div class="login-container" id="boxy">
+        <h1 id="cred">Sign in</h1>
+        <div id="tex" class="textbox">
+            <i class="fal fa-user"></i>
+            <input type="text" placeholder="Username">
+        </div>
+
+        <div class="textbox" id="pswrd">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password">
+        </div>
+
+        <input class="bttn" type="button" value="Sign In">
+        <p id="p1">Don't have an Account?</p><span id="sinup"><a href="login.html">Sign-Up</a></span>
+        </div>
+    </div> -->
+
+
+    <!-- SCRIPT -->
+<!-- JQUERY -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- OWL CAROUSEL -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+<!-- APP SCRIPT -->
+<script src="app.js"></script>
+
+</body>
+</html>
