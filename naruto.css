@@ -73,7 +73,7 @@ video{
     overflow-y: scroll;
     
 }
-.button{
+/* .button{
     
     background-color:black; 
     color:#c0392b;
@@ -92,6 +92,20 @@ video{
      
     
 
+} */
+.button {
+    margin: 15px;
+    padding: 15px;
+    border: 0 solid;
+    box-shadow: inset 0 0 20px hsl(0deg 0% 100% / 0%);
+    outline: 1px solid;
+    outline-color: hsla(0,0%,100%,.5);
+    outline-offset: 0;
+    text-shadow: none;
+    transition: all 1.25s cubic-bezier(.19,1,.22,1);
+    border-radius: 3px;
+    background-color: black;
+    color: blanchedalmond;
 }
 
 #episodeno{
@@ -103,13 +117,20 @@ video{
     padding-left: 5px;
 }
 
-.button:hover{
+/* .button:hover,.button:focus{
     background-color: #c0392b;
     color: black;
     transition: 0.5s;
     letter-spacing: 1px;
     border-radius: 8px;
-}
+} */
+.button:hover,.button:focus {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px #c0392b, 0 0 20px #c0392b;
+    outline-color: rgba(235, 5, 5, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #e42b16; 
+  }
 
 
 .episodes ul::-webkit-scrollbar{
